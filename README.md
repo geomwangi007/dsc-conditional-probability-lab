@@ -16,7 +16,12 @@ A coin is tossed and a single 6-sided die is rolled. Find the probability of lan
 
 
 ```python
-# Your code here
+head_on_coin = 1/2
+three_on_a_dice = 3/6
+
+head_on_coin_and_three_on_a_dice = 1/2 * 1/6
+
+head_on_coin_and_three_on_a_dice = 0.08333333333333333
 ```
 
 ## Exercise 2
@@ -26,7 +31,10 @@ After conducting a survey, one of the outcomes was that 8 out of 10 of the surve
 
 
 ```python
-# Your code here
+prob_of_liking_choc_cookies = 8/10
+prob_of_three_liking_choc_cookies = 0.8*0.8*0.8 
+
+prob_of_three_liking_choc_cookies = 0.5120000000000001
 ```
 
 ## Exercise 3
@@ -36,7 +44,8 @@ What percent of those who like chocolate also like strawberry?
 
 
 ```python
-# Your code here
+choc_and_strawberry = 0.35 / 0.7
+choc_and_strawberry = 0.5
 ```
 
 50% of your friends who like chocolate also like strawberry
@@ -46,7 +55,12 @@ What is the probability of drawing 2 consecutive aces from a deck of cards.
 
 
 ```python
-# Your code here
+first = 4/52
+second = 3/51
+
+two_consecutive = first * second
+
+two_consecutive = 0.004524886877828055
 ```
 
 ## Exercise 5
@@ -57,7 +71,12 @@ Hint: Use the chain rule here!
 
 
 ```python
-# Your code here
+first_pick = 95/100
+second_pick = 94/99
+third_pick = 93/98
+
+prob_of_none_being_defective = first_pick*second_pick*third_pick
+prob_of_none_being_defective = 0.8559987631416203
 ```
 
 ## Exercise 6
@@ -77,7 +96,11 @@ Let $i,j$ be the numbers shown on the dice. The events $A$ and $B$ are described
 
 
 ```python
-# Your code here
+#The total number of possible outcomes (size of the sample space 6*6 = 36
+# P(at least 1 die is greater than 4) = P(A) = 20/36
+Probab_of_B_given_A = (4/36)/(20/36) 
+Probab_of_B_given_A = 0.19999999999999998
+
 ```
 
 ## Exercise 7
@@ -100,7 +123,22 @@ With the knowledge we have about conditional probabilities, compute and interpre
 
 
 ```python
-# Your code here
+Probab_of_B_given_A = 0.25/0.5  
+Probab_of_B_prime_given_A = 1 - 0.5
+Probab_of_A_given_B = 0.25/0.4
+Probab_of_A_prime_given_B = 1 - 0.625
+
+
+print('The Probab_of_B_given_A is' , Probab_of_B_given_A)
+print('The Probab_of_B_prime_given_A is ' , Probab_of_B_prime_given_A)
+print('The Probab_of_A_given_B is' ,Probab_of_A_given_B)
+print('The Probab_of_A_prime_given_B is' , Probab_of_A_prime_given_B)
+
+
+The Probab_of_B_given_A is 0.5
+The Probab_of_B_prime_given_A is  0.5
+The Probab_of_A_given_B is 0.625
+The Probab_of_A_prime_given_B is 0.375
 ```
 
 ## Summary 
